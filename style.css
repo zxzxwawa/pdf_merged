@@ -1,0 +1,21 @@
+:root{
+  --bg:#f7f9fc;
+  --card:#ffffff;
+  --accent:#0b5fff;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;background:var(--bg);margin:0;color:#111}
+.container{max-width:860px;margin:36px auto;padding:24px;background:var(--card);border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+h1{margin-top:0}
+.controls{display:flex;gap:12px;align-items:center}
+#fileInput{flex:1}
+#mergeBtn{background:var(--accent);color:#fff;border:0;padding:8px 14px;border-radius:6px;cursor:pointer}
+#mergeBtn:disabled{opacity:0.6;cursor:default}
+.file-list{margin-top:18px}
+.file-item{display:flex;align-items:center;justify-content:space-between;padding:8px;border-radius:6px;border:1px solid #eef2ff;background:#fff;margin-bottom:8px}
+.file-meta{display:flex;gap:12px;align-items:center}
+.file-name{font-weight:600}
+.file-actions button{margin-left:6px}
+.status{margin-top:12px;color:var(--muted)}
+.small{font-size:0.9rem;color:var(--muted)}

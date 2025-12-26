@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PDF 合并工具</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- 使用 CDN 加载 pdf-lib（浏览器版本） -->
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>PDF 合并工具</h1>
+
+    <p>选择多个 PDF（按选择顺序合并）。选择后可以调整顺序或删除项，然后点击“合并并下载”。</p>
+
+    <div class="controls">
+      <input id="fileInput" type="file" accept="application/pdf" multiple />
+      <button id="mergeBtn">合并并下载</button>
+    </div>
+
+    <div id="fileList" class="file-list" aria-live="polite"></div>
+
+    <div id="status" class="status"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
